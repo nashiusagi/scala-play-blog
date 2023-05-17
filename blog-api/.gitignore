@@ -1,0 +1,8 @@
+logs
+target
+/.bsp
+/.project
+/.settings
+project/project
+project/metals.sbt
+target/
