@@ -16,11 +16,8 @@ lazy val root = (project in file("."))
 lazy val scala3Settings =
   Seq(
     scalacOptions ++= Seq(
-      "-explain",
       "-feature",
-      "-language:implicitConversions",
-      "-Xfatal-warnings",
-      "-Ykind-projector",
+      "-Werror"
     )
   )
 

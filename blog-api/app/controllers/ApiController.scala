@@ -5,10 +5,9 @@ import play.api._
 import play.api.mvc._
 
 @Singleton
-class ApiController @Inject()(cc: ControllerComponents) extends AbstractController(cc){
-    def index()=Action{
-        implicit request: Request[AnyContent]=>
-            //Ok(views.html.index())
-            Ok("hello world")
-    }
+class ApiController @Inject() (cc: ControllerComponents)
+    extends AbstractController(cc) {
+  def index() = Action { implicit request: Request[AnyContent] =>
+    Ok(views.html.index())
+  }
 }
